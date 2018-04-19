@@ -147,7 +147,7 @@ export default {
       }
     },
     value (newValue) {
-      if (!this.isSelectedValue(newValue) && newValue) {
+      if (!this.isSelectedValue(newValue)) {
         this.onSelectItem(newValue)
         this.searchText = newValue ? this.getLabel(newValue) : '';
       }
